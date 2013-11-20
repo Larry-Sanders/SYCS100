@@ -112,6 +112,33 @@ def binarySearch(BCL , Points): #Resubmission
             else:
             return -1
 
+
+
+
+#Larry Sanders
+def bsearch(List, Item):
+	Item = 0
+	Start = 0
+	End = len(List)-1
+	MidPoint = Start + End /2
+	Condition = 0        # This is just a variable to set as a condition to enter the while loop.
+	
+	while Condition == 0:
+		if Item > List[MidPoint]:
+			Start = MidPoint + 1
+			if Item == MidPoint:
+				return MidPoint
+		
+		elif Item < List[MidPoint]:
+			End = MidPoint - 1
+			if Item == MidPoint:
+				return MidPoint
+		
+		elif Item == MidPoint:
+			return MidPoint
+		
+		else:
+			return -1
         		
         		
         		
